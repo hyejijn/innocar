@@ -1,7 +1,7 @@
 @import url("reset.css");
 @import url("normalize.css");
 @import url("common.css");
-
+@import url("responsible.css");
 
 
 
@@ -9,30 +9,32 @@
 .nav__bar{
     background: #336AEA;
     padding: 28px 77px;
+    position: relative;
+    justify-content: space-between;
 }
 .nav__logo{
-    position: absolute;
+    position: relative;
     left: 77px;
 }
 .nav__menu{
     box-sizing: border-box;
-    display: flex;
     gap: 40px;
+    justify-content: space-between;
 }
 .nav__menu a{
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
-
+.menu_btn{
+    display: none;
+}
 
 /* <!-- section_kv --> */
 .kv__top .container{
     flex-direction: column;
     background: #336AEA;
     width: 100%;
-}
-.kv__main{
 }
 .Kv__title h1{
     padding-top: 80px;
@@ -217,6 +219,9 @@
     color: var(--color-light);
     margin: 32px 0;
 }
+.consult__main-subtitle-br{
+    display: none;
+}
 .consult-form{
     background: #CCDAFA;
     border-radius: 10px;
@@ -238,6 +243,8 @@
     color: #D9D9D9;
     border: 1px solid #D9D9D9;
     border-radius:5px;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 .consult-form__submit-group{
     margin-top: 32px;
@@ -277,6 +284,8 @@
 .logo2{
     margin-right: 74px;
     padding-left: 10%;
+    display: flex;
+    width: 70%;
 }
 .footer__right{
  margin-right: 165px;
@@ -285,5 +294,6 @@
 .social, .policy{
     display: flex;
     gap:25%;
+    text-decoration: none;
 }
 
